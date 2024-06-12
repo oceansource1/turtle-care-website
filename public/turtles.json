@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Chinese Pond Turtle",
+    "image": "images/cao.jpeg",
+    "description": "The Chinese Pond Turtle is a common freshwater turtle widely distributed in China, Japan, and Korea. They prefer to live in still or slow-flowing water environments such as ponds, lakes, and rivers."
+  },
+  {
+    "id": 2,
+    "name": "Chinese Striped-neck Turtle",
+    "image": "images/hua.jpeg",
+    "description": "The Chinese Striped-neck Turtle is named for the stripes on its neck. They are primarily found in southern China and prefer to live in warm, shallow water environments."
+  },
+  {
+    "id": 3,
+    "name": "Yellow Pond Turtle",
+    "image": "images/qing.jpeg",
+    "description": "The Yellow Pond Turtle is a freshwater turtle endemic to China. They are characterized by yellow spots on their throats and usually live in shallow ponds and slow-moving rivers."
+  },
+  {
+    "id": 4,
+    "name": "Yellow-margined Box Turtle",
+    "image": "images/yuan.jpeg",
+    "description": "The Yellow-margined Box Turtle is named for the yellow stripes along the edges of its shell. They are found in southeastern China and prefer to live on forest edges and moist grasslands."
+  },
+  {
+    "id": 5,
+    "name": "Big-headed Turtle",
+    "image": "images/ying.jpg",
+    "description": "The Big-headed Turtle is named for its distinctive large head and hooked upper jaw. They mainly inhabit clear streams and waterfalls in the mountainous regions of southern China."
+  },
+  {
+    "id": 6,
+    "name": "Spiny Turtle",
+    "image": "images/ju.jpg",
+    "description": "The Spiny Turtle is named for the serrated projections along the edges of its shell. They are mainly found in the tropical rainforests of Southeast Asia and prefer to live in dark, damp environments."
+  }
+]
