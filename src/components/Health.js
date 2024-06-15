@@ -4,6 +4,14 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
+const defaultXAxisProps = {
+  dataKey: 'month'
+};
+
+const defaultYAxisProps = {
+  width: 60
+};
+
 function Health() {
   const [symptoms, setSymptoms] = useState('');
   const [diagnosis, setDiagnosis] = useState('');
@@ -94,8 +102,8 @@ function Health() {
             <ResponsiveContainer width="100%" height={400}>
               <LineChart data={weightData}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="month" />
-                <YAxis />
+                <XAxis {...defaultXAxisProps} />
+                <YAxis {...defaultYAxisProps} />
                 <Tooltip />
                 <Legend />
                 <Line type="monotone" dataKey="weight" stroke="#8884d8" activeDot={{ r: 8 }} />
