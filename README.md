@@ -92,7 +92,7 @@ CSS (Responsive Layouts)
 Installation
 Clone the repository:
 
-git clone https://github.com/oceansource1/turtle-care-sharing.git
+git clone https://github.com/oceansource1/turtle-care-website.git
 Navigate to the project directory:
 
 cd turtle-care-sharing
