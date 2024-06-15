@@ -33,7 +33,7 @@ const turtleSpecies = [
     name: 'Big-headed Turtle',
     habitat: 'Clear streams and waterfalls',
     size: '9 inches',
-    description: 'The Big-headed Turtle is named for its distinctive large head and hooked upper jaw. They mainly inhabit clear streams and waterfalls in the mountainous regions of southern China. ',
+    description: 'The Big-headed Turtle is named for its distinctive large head and hooked upper jaw. They mainly inhabit clear streams and waterfalls in the mountainous regions of southern China.',
     image: '/images/ying.jpg',
   },
 ];
@@ -41,6 +41,8 @@ const turtleSpecies = [
 function Species() {
   const [selectedSpecies, setSelectedSpecies] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [draggedSpecies, setDraggedSpecies] = useState(null);
+  const [isDraggingOver, setIsDraggingOver] = useState(false);
 
   const handleSelectSpecies = (species) => {
     setSelectedSpecies(species);
@@ -48,6 +50,28 @@ function Species() {
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
+  };
+
+  const handleDragStart = (species) => {
+    setDraggedSpecies(species);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    if (draggedSpecies) {
+      setSelectedSpecies(draggedSpecies);
+      setDraggedSpecies(null);
+      setIsDraggingOver(false);
+    }
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    setIsDraggingOver(true);
+  };
+
+  const handleDragLeave = () => {
+    setIsDraggingOver(false);
   };
 
   const filteredSpecies = turtleSpecies.filter(species =>
@@ -71,13 +95,27 @@ function Species() {
             />
             <div className="species-list">
               {filteredSpecies.map(species => (
-                <div key={species.id} className="species-card" onClick={() => handleSelectSpecies(species)}>
+                <div
+                  key={species.id}
+                  className="species-card"
+                  draggable
+                  onDragStart={() => handleDragStart(species)}
+                  onClick={() => handleSelectSpecies(species)}
+                >
                   <img src={species.image} alt={species.name} className="species-image" />
                   <h3>{species.name}</h3>
                 </div>
               ))}
             </div>
           </section>
+          <div
+            className={`drop-area ${isDraggingOver ? 'drag-over' : ''}`}
+            onDrop={handleDrop}
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+          >
+            <p>Drop here to view details</p>
+          </div>
           {selectedSpecies && (
             <section className="content-section">
               <h2>{selectedSpecies.name}</h2>

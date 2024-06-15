@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Sidebar from './Sidebar';
@@ -6,6 +6,74 @@ import Testimonials from './Testimonials';
 import './style.css';
 
 function AboutUs() {
+  useEffect(() => {
+    const canvas = document.getElementById('turtleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // 设置Canvas的尺寸
+    canvas.width = 600;
+    canvas.height = 400;
+
+    // 绘制一个更复杂的乌龟形状
+    function drawTurtle() {
+      // 龟的身体
+      ctx.fillStyle = '#008000';
+      ctx.beginPath();
+      ctx.ellipse(300, 200, 150, 100, 0, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+
+      // 龟的头
+      ctx.fillStyle = '#006400';
+      ctx.beginPath();
+      ctx.arc(300, 120, 40, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+
+      // 龟的眼睛
+      ctx.fillStyle = '#000';
+      ctx.beginPath();
+      ctx.arc(290, 110, 5, 0, 2 * Math.PI);
+      ctx.arc(310, 110, 5, 0, 2 * Math.PI);
+      ctx.fill();
+
+      // 龟的四肢
+      ctx.fillStyle = '#008000';
+      ctx.beginPath();
+      ctx.ellipse(200, 200, 20, 40, Math.PI / 4, 0, 2 * Math.PI);
+      ctx.ellipse(400, 200, 20, 40, -Math.PI / 4, 0, 2 * Math.PI);
+      ctx.ellipse(230, 300, 20, 40, -Math.PI / 4, 0, 2 * Math.PI);
+      ctx.ellipse(370, 300, 20, 40, Math.PI / 4, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+
+      // 龟的尾巴
+      ctx.fillStyle = '#006400';
+      ctx.beginPath();
+      ctx.moveTo(300, 300);
+      ctx.lineTo(320, 340);
+      ctx.lineTo(280, 340);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      // 龟的壳
+      ctx.strokeStyle = '#006400';
+      ctx.beginPath();
+      ctx.moveTo(300, 100);
+      ctx.lineTo(300, 300);
+      ctx.moveTo(250, 150);
+      ctx.lineTo(350, 150);
+      ctx.moveTo(220, 200);
+      ctx.lineTo(380, 200);
+      ctx.moveTo(250, 250);
+      ctx.lineTo(350, 250);
+      ctx.stroke();
+    }
+
+    drawTurtle();
+  }, []);
+
   return (
     <div>
       <Header />
@@ -48,6 +116,10 @@ function AboutUs() {
                 <p>Web Developer & Turtle Enthusiast</p>
               </Link>
             </div>
+          </section>
+          <section className="content-section">
+            <h2>Canvas Turtle Drawing</h2>
+            <canvas id="turtleCanvas"></canvas>
           </section>
           <Testimonials />
         </main>

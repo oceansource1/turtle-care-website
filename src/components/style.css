@@ -18,7 +18,6 @@ body::before {
     background: url('./background.jpg') no-repeat center center fixed;
     background-size: cover;
     opacity: 0.2;
-    /* 调整透明度 */
     z-index: -1;
 }
 
@@ -33,14 +32,13 @@ header {
     background: linear-gradient(to right, rgba(79, 172, 254, 0.2), rgba(0, 242, 254, 0.2));
     padding: 0.5rem 0;
 }
+
 .header-content h1 {
     font-weight: bold;
-    /* 加粗字体 */
 }
 
 .nav-links li a {
     font-weight: bold;
-    /* 加粗字体 */
 }
 
 .container {
@@ -144,11 +142,12 @@ main img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .sidebar-section h3,
 .sidebar-section ul li a {
     font-weight: bold;
-    /* 加粗字体 */
 }
+
 footer {
     background: #333;
     color: #fff;
@@ -164,19 +163,17 @@ footer p {
     margin: 0;
     font-size: 1rem;
 }
+
 /* 新增侧边栏样式 */
 .main-content {
     display: flex;
     min-height: calc(100vh - 100px);
-        /* 确保侧边栏和底部栏覆盖整个页面高度 */
 }
 
 .sidebar {
     width: 200px;
-    /* 减小横向占用面积 */
     padding: 1rem;
     background: linear-gradient(to right, rgba(79, 172, 254, 0.4), rgba(0, 242, 254, 0.4));
-    /* 使用与导航栏相同的渐变色 */
     color: white;
     border-right: 1px solid #ccc;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -224,9 +221,9 @@ footer p {
 .social-links li {
     margin-bottom: 0.5rem;
 }
+
 footer {
     background: linear-gradient(to right, rgba(79, 172, 254, 0.5), rgba(0, 242, 254, 0.5));
-    /* 设置与导航栏相同的背景颜色 */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -234,13 +231,13 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: auto;
-    /* 确保侧边栏与底部栏无缝连接 */
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
 }
+
 /* 新增 SKU 样式 */
 .sku-container {
     display: flex;
@@ -264,14 +261,10 @@ footer p {
 
 .sku-box img {
     width: 230px;
-    /* 设置图片宽度 */
     height: 150px;
-    /* 设置图片高度 */
     object-fit: cover;
-    /* 保持图片比例 */
     border-radius: 10px;
     margin-bottom: 0.5rem;
-    /* 图片和名称之间的间距 */
 }
 
 .sku-box:hover {
@@ -281,7 +274,6 @@ footer p {
 .sku-box h3 {
     margin: 0;
     color: black;
-    /* 恢复成黑色 */
 }
 
 .sku-box h3 a,
@@ -290,19 +282,15 @@ footer p {
 .sku-box h3 a:hover,
 .sku-box h3 a:active {
     color: black;
-    /* 恢复成黑色 */
     text-decoration: none;
-    /* 去除下划线 */
 }
 
 .sku-box a {
     text-decoration: none;
-    /* 去除下划线 */
 }
 
 .sku-box a:hover {
     text-decoration: none;
-    /* 确保悬停时也没有下划线 */
 }
 
 /* 新增 Home 页面大框样式 */
@@ -327,8 +315,6 @@ footer p {
     height: auto;
     margin: 1rem 0;
 }
-
-
 
 /* 新增 Basics 页面样式 */
 .basics-container {
@@ -358,7 +344,6 @@ footer p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* 水平居中 */
 }
 
 .image-carousel {
@@ -369,9 +354,7 @@ footer p {
 
 .carousel-image {
     width: 190px;
-    /* 拉长图片宽度 */
     height: 170px;
-    /* 缩短图片高度 */
     margin-right: 1rem;
     border-radius: 10px;
     flex-shrink: 0;
@@ -384,19 +367,16 @@ footer p {
     cursor: pointer;
     padding: 0.5rem;
     background-color: rgba(244, 244, 244, 0.5);
-    /* 半透明背景 */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .collapsible-header:hover {
     background-color: rgba(224, 224, 224, 0.5);
-    /* 半透明背景 */
 }
 
 .collapsible-header.active {
     background-color: rgba(204, 204, 204, 0.5);
-    /* 半透明背景 */
     color: #333;
 }
 
@@ -419,7 +399,6 @@ footer p {
 /* 新增内容区块样式 */
 .content-section {
     background: rgba(255, 255, 255, 0.5);
-    /* 半透明背景 */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -443,14 +422,6 @@ footer p {
 .environment-container p {
     font-size: 1.2rem;
     color: #555;
-}
-
-.content-section {
-    background: rgba(255, 255, 255, 0.5);
-    /* 半透明背景 */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .layout-animation {
@@ -505,7 +476,6 @@ footer p {
 
 .food-item {
     background: rgba(244, 244, 244, 0.5);
-    /* 半透明背景 */
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -517,25 +487,19 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    /* 增大间距 */
     width: 100%;
-    /* 增大宽度 */
 }
 
 .feeding-plan-generator label {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    /* 调大字体 */
 }
 
 .feeding-plan-generator input {
     padding: 1rem;
-    /* 调大输入框 */
     font-size: 1.2rem;
-    /* 调大字体 */
     width: 100%;
-    /* 增大宽度 */
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -544,16 +508,13 @@ footer p {
 
 .feeding-plan-generator button {
     padding: 1rem 2rem;
-    /* 调大按钮 */
     font-size: 1.5rem;
-    /* 调大字体 */
     background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-    /* 增大宽度 */
 }
 
 .feeding-plan-generator button:hover {
@@ -564,22 +525,18 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    /* 增大间距 */
     width: 100%;
-    /* 增大宽度 */
 }
 
 .intake-progress label {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    /* 调大字体 */
 }
 
 .intake-progress progress {
     width: 100%;
     height: 30px;
-    /* 调大进度条 */
     margin-top: 0.5rem;
 }
 
@@ -593,20 +550,17 @@ footer p {
 }
 
 .large-section {
-    width: 600px;
-    /* 设置固定宽度 */
+    width: 100%;
+    max-width: 600px;
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(249, 249, 249, 0.5);
-    /* 半透明背景 */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 水平居中 */
     text-align: center;
-    /* 文字居中 */
 }
 
 .health-container h2 {
@@ -624,9 +578,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 水平居中 */
     width: 100%;
-    /* 让内容占满父元素的宽度 */
 }
 
 .health-check-list label {
@@ -635,14 +587,11 @@ footer p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* 让标签占满父元素的宽度 */
     text-align: center;
-    /* 文字居中 */
 }
 
 .health-check-list input {
     margin-right: 0.5rem;
-    /* 调整复选框和标签之间的间距 */
 }
 
 .submit-button {
@@ -656,7 +605,6 @@ footer p {
     margin-top: 1rem;
     display: block;
     width: 50%;
-    /* 确保按钮不会跑出框外 */
     text-align: center;
 }
 
@@ -677,11 +625,9 @@ footer p {
     width: 100%;
     padding: 1rem;
     font-size: 0.9rem;
-    /* 减小表单元素的字体大小 */
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: none;
-    /* 禁用拖动调整大小 */
 }
 
 .symptom-checker button {
@@ -697,6 +643,7 @@ footer p {
 .symptom-checker button:hover {
     background-color: #0056b3;
 }
+
 /* 新增 Species 页面样式 */
 .species-container {
     padding: 2rem;
@@ -705,14 +652,16 @@ footer p {
 .species-container section {
     margin-bottom: 2rem;
     padding: 2rem;
-    /* 增加初始框大小 */
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(249, 249, 249, 0.5);
-    /* 半透明背景 */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: calc(100% - 4rem);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .large-section {
@@ -724,14 +673,12 @@ footer p {
     font-size: 2rem;
     color: #333;
     text-align: center;
-    /* 将标题居中 */
 }
 
 .species-container p {
     font-size: 1.2rem;
     color: #555;
     text-align: center;
-    /* 将段落文本居中 */
 }
 
 .search-input {
@@ -743,9 +690,7 @@ footer p {
     margin-bottom: 2rem;
     box-sizing: border-box;
     max-width: 600px;
-    /* 设置最大宽度 */
     display: block;
-    /* 将搜索框居中 */
     margin-left: auto;
     margin-right: auto;
 }
@@ -755,12 +700,10 @@ footer p {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    /* 列表内容居中 */
 }
 
 .species-card {
     background: rgba(244, 244, 244, 0.5);
-    /* 半透明背景 */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -772,7 +715,6 @@ footer p {
 
 .species-card:hover {
     background: rgba(224, 224, 224, 0.5);
-    /* 半透明背景 */
 }
 
 .species-image {
@@ -790,6 +732,30 @@ footer p {
     border-radius: 10px;
 }
 
+.drop-area {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    background: rgba(249, 249, 249, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 4rem);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.drop-area.drag-over {
+    background-color: rgba(224, 224, 224, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* 新增 Community Stories 页面样式 */
 .community-stories-container {
     padding: 2rem;
@@ -798,11 +764,9 @@ footer p {
 .community-stories-container section {
     margin-bottom: 2rem;
     padding: 2rem;
-    /* 增加初始框大小 */
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(249, 249, 249, 0.5);
-    /* 半透明背景 */
     position: relative;
 }
 
@@ -811,7 +775,6 @@ footer p {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(249, 249, 249, 0.5);
-    /* 半透明背景 */
     position: relative;
 }
 
@@ -826,7 +789,6 @@ footer p {
     flex-direction: column;
     gap: 1rem;
     padding-right: 2rem;
-    /* 预留右边的空白 */
 }
 
 .story-form label {
@@ -873,7 +835,6 @@ footer p {
 
 .story-card {
     background: rgba(244, 244, 244, 0.5);
-    /* 半透明背景 */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -918,30 +879,24 @@ footer p {
     font-size: 1.1rem;
     color: #555;
 }
+
 /*login/register*/
 .nav-buttons .button {
     color: #005f7f;
-    /* 按钮文字颜色，深蓝色 */
     text-decoration: none;
     background: #faf9f9;
-    /* 按钮背景颜色，浅灰色 */
     padding: 0.5rem 1rem;
     margin-left: 1rem;
     border-radius: 5px;
     border: 2px solid #00f2fe;
-    /* 增加按钮边框，使用导航栏背景颜色 */
     transition: background 0.3s, color 0.3s;
     opacity: 0.6;
-    /* 设置透明度 */
 }
 
 .nav-buttons .button:hover {
     background: #005f7f;
-    /* 悬停时的背景颜色，深蓝色 */
     color: #fff;
-    /* 悬停时的文字颜色，白色 */
     opacity: 1;
-    /* 悬停时的透明度 */
 }
 
 .login-main {
@@ -949,7 +904,6 @@ footer p {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 100px);
-    /* 根据实际情况调整 */
 }
 
 .login-container {
@@ -1002,21 +956,17 @@ footer p {
     cursor: pointer;
     transition: background 0.3s;
     opacity: 0.6;
-    /* 设置透明度 */
 }
 
 .login-button:hover,
 .guest-button:hover {
     background-color: #4facfe;
     opacity: 1;
-    /* 悬停时的透明度 */
 }
 
 /*login*/
-/* 调整 Login 页面大框 */
 .login-container {
     width: 450px;
-    /* 原来是 300px, 放大1.5倍 */
     padding: 2rem;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
@@ -1064,7 +1014,6 @@ footer p {
     display: block;
     width: 100%;
     opacity: 0.5;
-    /* 设置透明度 */
 }
 
 .login-button:hover,
@@ -1072,14 +1021,11 @@ footer p {
 .register-button:hover {
     background-color: #4facfe;
     opacity: 1;
-    /* 悬停时的透明度 */
 }
 
 /*register*/
-/* 调整 Register 页面大框 */
 .register-container {
     width: 450px;
-    /* 原来是 300px, 放大1.5倍 */
     padding: 2rem;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.8);
@@ -1125,14 +1071,13 @@ footer p {
     display: block;
     width: 100%;
     opacity: 0.5;
-    /* 设置透明度 */
 }
 
 .register-button:hover {
     background-color: #4facfe;
     opacity: 1;
-    /* 悬停时的透明度 */
 }
+
 /* About Us 页面样式 */
 .about-container {
     padding: 2rem;
@@ -1201,7 +1146,6 @@ footer p {
     margin: 1rem;
     text-align: center;
     width: 300px;
-    /* 调整宽度与上方的框一致 */
     transition: transform 0.3s;
     text-decoration: none;
     color: inherit;
@@ -1249,6 +1193,15 @@ footer p {
     color: #555;
 }
 
+/* Canvas 样式 */
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
 /* 新增 Contact Us 页面样式 */
 .contact-container {
     padding: 2rem;
@@ -1275,12 +1228,9 @@ footer p {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 2000px;
-    /* 调整为更大的宽度 */
     width: 100%;
     margin: 0 auto;
     margin-left: -150px;
-        /* 向左移动 */
-    /* 增加以下内容 */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1291,7 +1241,6 @@ footer p {
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    /* 确保表单宽度 */
 }
 
 .form-group {
@@ -1299,7 +1248,6 @@ footer p {
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
-    /* 确保表单组宽度 */
 }
 
 .suggestions {
@@ -1330,13 +1278,13 @@ footer p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    /* 水平居中 */
     align-self: center;
 }
 
 .submit-button:hover {
     background-color: #218838;
 }
+
 /* FAQ 页面样式 */
 .faq-container {
     padding: 2rem;
@@ -1393,64 +1341,7 @@ footer p {
 .faq-item.open .faq-answer {
     display: block;
 }
-/* 新增 FAQ 页面样式 */
-.faq-container {
-    padding: 2rem;
-}
 
-.faq-container section {
-    margin-bottom: 2rem;
-}
-
-.faq-container h2 {
-    margin-top: 0;
-    font-size: 2rem;
-    color: #333;
-}
-
-.faq-container p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.faq-search {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.2rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    box-sizing: border-box;
-}
-
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.faq-item {
-    background: rgba(249, 249, 249, 0.8);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
-}
-
-.faq-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.faq-item h3 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.faq-item p {
-    font-size: 1.2rem;
-    color: #555;
-}
 /* 文章内容样式 */
 .article-content {
     padding: 6rem;
@@ -1541,6 +1432,7 @@ footer p {
 .comment-form button:hover {
     background-color: #218838;
 }
+
 /* Testimonials CSS */
 .testimonials-container {
     padding: 1rem;
@@ -1550,11 +1442,8 @@ footer p {
     margin-top: 2rem;
     text-align: center;
     width: 80%;
-    /* 调整宽度与外面的大框一致 */
     max-width: 600px;
-    /* 最大宽度设置为600px */
     margin: 0 auto;
-    /* 居中显示 */
     transition: transform 0.3s;
 }
 
@@ -1565,7 +1454,6 @@ footer p {
 .testimonials-container h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
-    /* 调整字体大小 */
     color: #333;
 }
 
@@ -1591,13 +1479,81 @@ footer p {
 
 .testimonial-item p {
     font-size: 1.2rem;
-    /* 调整字体大小 */
     color: #555;
 }
 
 .testimonial-item h4 {
     margin-top: 0.5rem;
     font-size: 1.5rem;
-    /* 调整字体大小 */
     color: #333;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+
+    .header-content,
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    main {
+        order: 2;
+    }
+
+    .content-section,
+    .species-container section,
+    .large-section,
+    .drop-area {
+        width: calc(100% - 2rem);
+        padding: 1rem;
+    }
+
+    .sku-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sku-box {
+        width: calc(100% - 2rem);
+    }
+
+    .community-stories-container section,
+    .health-container section,
+    .environment-container section,
+    .feeding-container section,
+    .basics-container section,
+    .about-container section {
+        width: calc(100% - 2rem);
+        padding: 1rem;
+    }
+
+    .story-form {
+        padding-right: 0;
+    }
+
+    .story-form input,
+    .story-form textarea {
+        width: calc(100% - 2rem);
+    }
+
+    .symptom-checker {
+        width: calc(100% - 2rem);
+        padding-right: 0;
+    }
 }

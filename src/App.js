@@ -18,6 +18,7 @@ import AboutUs from './components/AboutUs';
 import FAQ from './components/FAQ';
 import MySelfIntroduction from './components/MySelfIntroduction';
 import Testimonials from './components/Testimonials';
+import EventsNews from './components/EventsNews';
 function App() {
   return (
     <Router>
@@ -40,6 +41,7 @@ function App() {
         <Route path="/article3" element={<Article3 />} />
         <Route path="/myselfintroduction" element={<MySelfIntroduction />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/events-news" element={<EventsNews />} />
       </Routes>
     </Router>
   );

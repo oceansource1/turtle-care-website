@@ -23,6 +23,7 @@ function Header() {
               <li><Link to="/health">Health Care</Link></li>
               <li><Link to="/species">Species</Link></li>
               <li><Link to="/communitystories">Community Stories</Link></li>
+              <li><Link to="/events-news">Events & News</Link></li>
             </ul>
           </nav>
         </div>
